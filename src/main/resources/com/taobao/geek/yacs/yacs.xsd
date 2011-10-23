@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://www.taobao.com/schema/geek/yacs"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.taobao.com/schema/geek/yacs"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<xsd:element name="scan">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="property" minOccurs="0" maxOccurs="unbounded" />
+			</xsd:sequence>
+			<xsd:attribute name="scanner" type="xsd:string" />
+		</xsd:complexType>
+
+	</xsd:element>
+	<xsd:element name="property">
+		<xsd:complexType>
+			<xsd:attribute name="key" type="xsd:string" />
+			<xsd:attribute name="value" type="xsd:string" />
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
